@@ -89,7 +89,9 @@ function addRow(){
 }
      
      function deleteRow(){
+		 var result = confirm("Borrar la linea seleccionada?");
+			if (result) {
+			tb.deleteRow(pointer);
+			}
      
-         tb.deleteRow(pointer);
-        
 }
