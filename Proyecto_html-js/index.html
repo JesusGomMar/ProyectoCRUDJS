@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>CRUD js</title>
+		<meta charset="utf-8">
+		
+	</head>
+
+	<body>
+	
+	<div>
+		<h1>Formulario</h1>
+		<h2>Entrada de datos</h2>
+		<form onsubmit = "">
+			
+			<div>
+				<label for="name">Nombre</label></br>
+				<input type="text" size="30" id="name" name = "name" placeholder="Nombre">
+			</div>
+			<div>
+				<label for="surname">Apellidos:</label></br>
+				<input type="text" size="30" id="surname" name = "surname" placeholder="Apellidos">
+			</div>
+			<div>
+				<label for="address">Dirección:</label></br>
+				<textarea rows="4" columns="40" id="address" name = "address" placeholder="Dirección"></textarea>
+			</div>
+			<div>
+				<label for="country">País:</label></br>
+				<select id = "country" name="country">
+					<option value="España">España</option>
+					<option value="Extranjero">Extranjero</option>
+				</select>
+			</div>
+			<div>
+				<label for="comaut">Comunidad Autónoma:</label></br>
+				<select id = "comaut" name="comaut">
+					<option value="CyL">Castilla y León</option>
+					<option value="Madrid">Madrid</option>
+				</select>
+			</div>
+			<div>
+				<label for="cp">Código Postal</label></br>
+				<input type="number" size="10" id="cp" name = "cp" placeholder="CP">
+			</div>
+			<div>
+				<label for="city">Ciudad:</label></br>
+				<select  id = "city" name="city">
+					<option value="Salamanca">Salamanca</option>
+					<option value="Madrid">Madrid</option>
+				</select>
+			</div>
+			<div>
+				<label for="email">Correo Electrónico</label></br>
+				<input type="email" size="30" id="email" name = "email" placeholder="email">
+			</div>
+		
+			
+		</form>
+			<div>
+				
+				<button onclick ="addRow();">Registrar</button>
+				<button onclick="editRow();">Editar</button>
+                <button onclick="deleteRow();">Borrar</button>
+			</div>
+			
+	
+	</div>
+	
+	
+	<div>
+		<h2>Tabla</h2>
+		
+		<table id = "tabla">
+
+				<tr>
+					<th>Nombre</th>
+					<th>Apellidos</th>
+					<th>Dirección</th>
+					<th>País</th>
+					<th>Comunidad Autónoma</th>
+					<th>Código Postal</th>
+					<th>Ciudad</th>
+					<th>Correo Electrónico</th>
+					
+				</tr>
+				
+
+					
+		</table>
+		
+		
+	
+	
+	</div>
+
+	</body>
+	
+	<script type = "text/javascript" src ="js/js.js"></script>
+	
+</html>
